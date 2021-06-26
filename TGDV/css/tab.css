@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.tab-section {
+  padding: 30px 0;
+}
+
+.nav-tab {
+  width: 100%;
+}
+
+.nav-tab__link {
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.nav-tab li {
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+
+}
+
+.nav-tab li a {
+  color: #979998;
+  padding: 5px 15px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-tab li a:hover {
+  cursor: pointer;
+  color: #622c60;
+  border-bottom: 2px solid #622c60;
+}
+
+.nav-tab li a.active {
+  color: #622c60;
+  border-bottom: 2px solid #622c60;
+  position: relative;
+}
+
+.nav-tab li a.active:before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #622c60;
+}
+
+.nav-tab__content {
+  padding: 16px;
+}
+
+.nav-tab__tab-panel {
+  display: none;
+}
+
+.nav-tab__tab-panel.active {
+  display: block;
+}
+
+.product-item {
+  border: 1px solid #979998;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.product-name {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product-quantity {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.product-sub-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-sub-title span {
+  font-size: 16px;
+  color: #622c60;
+}
+
+.product-time {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-time-item {
+  width: 25%;
+  text-align: center;
+}
+
+.product-time .count {
+  background-color: #622c60;
+  border-radius: 100%;
+  font-size: 14px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.product-progress-bar {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.product-progress-bar .progress-value {
+  margin-bottom: 5px;
+  position: relative;
+  display: block;
+  height: 11px;
+  background-color: #e4e4e4;
+  border-radius: 10px;
+}
+
+.product-progress-bar .progress-value > span {
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 100%;
+    background-color: #622c60;
+    width: 0;
+    border-radius: 10px;
+}
