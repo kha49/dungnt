@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Thế giới dịch vụ</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/listing.css">
+</head>
+
+<body>
+  <div class="listing-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-3 filter-wrapper">
+          <div class="filter-list">
+            <div class="filter-section">
+              <div class="filter-menu">
+                <span class="filter-title">Danh mục sản phẩm</span>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="filter-item__category-link">
+                    <a href="#">Điện thoại Smartphone</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="filter-item__category-link">
+                    <a href="#">Điện thoại phổ thông</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="filter-item__category-link">
+                    <a href="#">Điện thoại bàn</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="filter-item__category-link">
+                    <a href="#">Máy đọc sách</a>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="filter-item__category-link">
+                    <a href="#">Máy tính bảng</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-list">
+            <div class="filter-section">
+              <div class="filter-menu">
+                <span class="filter-title">Địa chỉ nhận hàng</span>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="shipping-info">
+                    <span>Bạn muốn giao hàng tới đâu?</span>
+                    <a href="javascript:void(0)">Nhập địa chỉ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Dịch vụ</span>
+            </div>
+            <div class="content-filter" id="content-dichvu">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="service" type="checkbox">
+                    <label for="service">
+                      <span class="stars">
+                        Giao Siêu Tốc 2H
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="service-1" type="checkbox">
+                    <label for="service-1">
+                      <span class="stars">
+                        Miễn phí Giao Hàng
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="service-2" type="checkbox">
+                    <label for="service-2">
+                      <span class="stars">
+                        Rẻ Hơn Hoàn Tiền
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Đánh giá</span>
+            </div>
+            <div class="content-filter" id="content-filter__rating">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="rate" type="checkbox">
+                    <label for="rate">
+                      <span class="stars" style="color: #fed835;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span>từ 5 sao</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="rate-1" type="checkbox">
+                    <label for="rate-1">
+                      <span class="stars" style="color: #fed835;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star" style="color: #b8b8b8;"></i>
+                      </span>
+                      <span>từ 4 sao</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="rate-2" type="checkbox">
+                    <label for="rate-2">
+                      <span class="stars" style="color: #fed835;">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star" style="color: #b8b8b8;"></i>
+                        <i class="fa fa-star" style="color: #b8b8b8;"></i>
+                      </span>
+                      <span>từ 3 sao</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Giá</span>
+            </div>
+            <div class="content-filter" id="content-filter__brand">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-radio">
+                    <input id="price" type="checkbox" hidden>
+                    <label for="price" class="price-tag">
+                      Dưới 500.000
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="price-1" type="checkbox" hidden>
+                    <label for="price-1" class="price-tag">
+                      Từ 500.000 đến 3.500.000
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="price-2" type="checkbox" hidden>
+                    <label for="price-2" class="price-tag">
+                      Từ 3.500.000 đến 18.000.000
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="price-3" type="checkbox" hidden>
+                    <label for="price-3" class="price-tag">
+                      Trên 18.000.000
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-input">
+                    <label for="price-range-1 mb-2 ml-0">
+                      Chọn khoảng giá
+                    </label>
+                    <div class="price-range__input">
+                      <input id="price-range-1" type="text">
+                      <span>-</span>
+                      <input id="price-range-2" type="text">
+                    </div>
+                    <button class="btn price-range__btn" type="button">Áp dụng</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Thương hiệu</span>
+            </div>
+            <div class="content-filter" id="content-filter__brand">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand" type="checkbox">
+                    <label for="brand">
+                      Samsung
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-1" type="checkbox">
+                    <label for="brand-1">
+                      Panasonic
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-2" type="checkbox">
+                    <label for="brand-2">
+                      Xioami
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-3" type="checkbox">
+                    <label for="brand-3">
+                      OEM
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-4" type="checkbox">
+                    <label for="brand-4">
+                      Apple
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-5" type="checkbox">
+                    <label for="brand-5">
+                      Kindle
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-6" type="checkbox">
+                    <label for="brand-6">
+                      Masstel
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-7" type="checkbox">
+                    <label for="brand-7">
+                      OPPO
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-8" type="checkbox">
+                    <label for="brand-8">
+                      Vsmart
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="brand-9" type="checkbox">
+                    <label for="brand-9">
+                      Nokia
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="brand-action">
+                <div class="expand-content">
+                  <p>Xem thêm<i class="fas fa-chevron-down"></i></p>
+                </div>
+                <div class="short-content" style="display: none;">
+                  <p>Rút gọn<i class="fas fa-chevron-up"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Camera sau</span>
+            </div>
+            <div class="content-filter" id="content-filter__camera-back">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-back" type="checkbox">
+                    <label for="camera-back">
+                      Từ 11MP đến 13MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-back-1" type="checkbox">
+                    <label for="camera-back-1">
+                      Trên 16MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-back-2" type="checkbox">
+                    <label for="camera-back-2">
+                      Dưới 8MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-back-3" type="checkbox">
+                    <label for="camera-back-3">
+                      Từ 14MP đến 16MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-back-4" type="checkbox">
+                    <label for="camera-back-4">
+                      Từ 8MP đến 10MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Camera trước</span>
+            </div>
+            <div class="content-filter" id="content-filter__camera-front">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-front" type="checkbox">
+                    <label for="camera-front">
+                      Trên 12MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-front-1" type="checkbox">
+                    <label for="camera-front-1">
+                      Từ 8MP đến 12MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-front-2" type="checkbox">
+                    <label for="camera-front-2">
+                      Dưới 8MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="camera-front-3" type="checkbox">
+                    <label for="camera-front-3">
+                      Từ 5MP đến 8MP
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Màu sắc</span>
+            </div>
+            <div class="content-filter" id="content-filter__colour">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour" type="checkbox">
+                    <label for="colour">
+                      Đen
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-1" type="checkbox">
+                    <label for="colour-1">
+                      Xanh
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-2" type="checkbox">
+                    <label for="colour-2">
+                      Trắng
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-3" type="checkbox">
+                    <label for="colour-3">
+                      Xám
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-4" type="checkbox">
+                    <label for="colour-4">
+                      Xanh dương
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-5" type="checkbox">
+                    <label for="colour-5">
+                      Vàng
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-6" type="checkbox">
+                    <label for="colour-6">
+                      Bạc
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-7" type="checkbox">
+                    <label for="colour-7">
+                      Đỏ
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-8" type="checkbox">
+                    <label for="colour-8">
+                      Tím
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="colour-9" type="checkbox">
+                    <label for="colour-9">
+                      Xanh lá
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="colour-action">
+                <div class="expand-content">
+                  <p>Xem thêm<i class="fas fa-chevron-down"></i></p>
+                </div>
+                <div class="short-content" style="display: none;">
+                  <p>Rút gọn<i class="fas fa-chevron-up"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Kích cỡ</span>
+            </div>
+            <div class="content-filter" id="content-filter__size">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="size" type="checkbox">
+                    <label for="size">
+                      15
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Nhà cung cấp</span>
+            </div>
+            <div class="content-filter" id="content-filter__supplier">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier" type="checkbox">
+                    <label for="supplier">
+                      Tiki Trading
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-1" type="checkbox">
+                    <label for="supplier-1">
+                      HAPPY PHONE
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-2" type="checkbox">
+                    <label for="supplier-2">
+                      Di động Việt Shop
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-3" type="checkbox">
+                    <label for="supplier-3">
+                      Hồng Hạnh Moblie
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-4" type="checkbox">
+                    <label for="supplier-4">
+                      Viễn Tín Sài Gòn
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-5" type="checkbox">
+                    <label for="supplier-5">
+                      IStore
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-6" type="checkbox">
+                    <label for="supplier-6">
+                      Long Hưng Mobile
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-7" type="checkbox">
+                    <label for="supplier-7">
+                      CÔNG TY SMART
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-8" type="checkbox">
+                    <label for="supplier-8">
+                      Antram Trading
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-checkbox">
+                    <input id="supplier-9" type="checkbox">
+                    <label for="supplier-9">
+                      Mivn
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="supplier-action">
+                <div class="expand-content">
+                  <p>Xem thêm<i class="fas fa-chevron-down"></i></p>
+                </div>
+                <div class="short-content" style="display: none;">
+                  <p>Rút gọn<i class="fas fa-chevron-up"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-section">
+            <div class="filter-menu">
+              <span class="filter-title">Giao hàng</span>
+            </div>
+            <div class="content-filter" id="content-filter__transport">
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-radio">
+                    <input id="transport-method" type="radio" name="transport">
+                    <label for="transport-method">
+                      Hàng Nội Địa
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-items">
+                <div class="filter-item">
+                  <div class="md-radio">
+                    <input id="transport-method-1" type="radio" name="transport">
+                    <label for="transport-method-1">
+                      Hàng Quốc Tế
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-9 listing__items-section">
+          <div class="listing__items-wrapper row">
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5 class="">Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5 class="">Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5 class="">Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5>Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5 class="">Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="listing__item col-12 col-sm-3">
+              <div class="item__content">
+                <a class="item__link">
+                  <div class="item__img">
+                    <img src="image/logo.jpg" alt="">
+                  </div>
+                  <h5 class="">Học đệm hát Guitar cùng Haketu</h5>
+                </a>
+                <div class="promotion-percent"><span>-72%</span></div>
+                <div class="item__description">
+                  <div class="item__description-left">
+                    <span class="item__author">Hà Kế Tú</span>
+                    <div class="item__rating">
+                      <span class="item__rating-star ratingJs">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </span>
+                      <span class="item__rating-count">(156)</span>
+                    </div>
+                  </div>
+                  <div class="item__description-right">
+                    <p class="item__origin-price">
+                      700.000
+                    </p>
+                    <p class="item__promotion-price">
+                      199.000
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    var itemRatings = document.querySelectorAll('.item__rating-star .fa-star');
+
+    var starOver = function (e) {
+      var $current = e.target;
+      var $rate = $current.closest('.ratingJs');
+      var $starsList = $rate.querySelectorAll('.fa-star');
+      var $indexOfCurrent = Array.prototype.indexOf.call($starsList, $current);
+      $starsList.forEach(function (item, index) {
+        if (index <= $indexOfCurrent) {
+          $(item).addClass('star');
+        } else {
+          $(item).removeClass('star');
+        }
+
+      });
+    }
+    var starOut = function (e) {
+      var $current = e.target;
+      var $rate = $current.closest('.ratingJs');
+      var $starsList = $rate.querySelectorAll('.fa-star');
+      $starsList.forEach(function (item, index) {
+        $(item).removeClass('star');
+      });
+    }
+
+    itemRatings.forEach(function (item, index) {
+      item.addEventListener('mouseover', starOver, false)
+      item.addEventListener('mouseout', starOut, false)
+    })
+  </script>
+
+</body>
+
+</html>
