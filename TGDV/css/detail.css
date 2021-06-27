@@ -54,6 +54,99 @@ img {
   color: #622c60;
 }
 
+.video-course {
+  padding: 20px 0;
+}
+
+.video {
+  background-color: red;
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.course-evaluate {
+  border: 2px solid #622c60;
+  padding: 16px;
+}
+
+.ratings {
+  display: flex;
+  justify-content: center;
+}
+
+.count {
+  margin-right: 10px;
+}
+
+.ratings:nth-of-type(1) .type-rating {
+  color: #622c60;
+}
+
+.ratings:nth-of-type(2) .type-rating {
+  color: #8f3862;
+}
+
+.ratings:nth-of-type(3) .type-rating {
+  color: #eb818f;
+}
+
+.ratings:nth-of-type(4) .type-rating {
+  color: #ff7364;
+}
+
+.criteria {
+  margin: 20px;
+}
+
+.criteria-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.divide {
+  display: block;
+  position: relative;
+  width: 50%;
+}
+
+.divide-bar {
+  position: relative;
+  display: block;
+  height: 11px;
+  background-color: #ffa72b;
+}
+
+.ratings-description {
+  text-align: center;
+  font-weight: bold;
+}
+
+.ratings-description span {
+  color: #ffa72b;
+  font-size: 20px;
+}
+
+.evaluate-button {
+  color: #fff;
+  background-color: #622c60;
+  width: 100%;
+  display: block;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 20px 0;
+}
+
 @media screen and (min-width: 768px) {
   .rating-item {
     font-size: 20px;
