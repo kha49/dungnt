@@ -177,6 +177,7 @@
   border: 1px solid #979998;
   border-radius: 5px;
   width: 45%;
+  padding: 5px;
 }
 
 .content-filter label.price-tag {
@@ -184,4 +185,10 @@
   border-radius: 15px;
   padding: 3px 15px;
   margin: 0;
+}
+
+.price-range__btn {
+  border: 1px solid #0d9fdb;
+  color: #0d9fdb;
+  margin-top: 10px;
 }
