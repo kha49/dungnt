@@ -76,6 +76,7 @@ img {
 .course-evaluate {
   border: 2px solid #622c60;
   padding: 16px;
+  margin-top: 10px;
 }
 
 .ratings {
@@ -147,8 +148,61 @@ img {
   margin: 20px 0;
 }
 
+.services {
+  padding: 20px 0;
+}
+
+ul.tab-services {
+  display: flex;
+}
+
+ul.tab-services li {
+  list-style: none;
+  background-color: #ffa72b;
+  width: 33.3333%;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+ul.tab-services li:nth-of-type(2) {
+  border-left: 1px solid #622c60;
+  border-right: 1px solid #622c60;
+}
+
+ul.tab-services li.active {
+  background-color: #622c60;
+}
+
+ul.tab-services li a {
+  color: #fff;
+}
+
+.services .title {
+  font-size: 36px;
+  color: #622c60;
+}
+
+.pr-services {
+  padding: 20px 0;
+}
+
+.fa-check {
+  color: #ffa72b;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
 @media screen and (min-width: 768px) {
   .rating-item {
     font-size: 20px;
+  }
+
+  ul.tab-services li {
+    font-size: 20px;
+  }
+
+  .course-evaluate {
+    margin-top: 0;
   }
 }
