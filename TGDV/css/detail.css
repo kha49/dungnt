@@ -203,6 +203,42 @@ ul.tab-services li a {
   margin-bottom: 0;
 }
 
+.description-title {
+  color: #622c60;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description-subtitle {
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.ratings-user {
+  color: #d6d6d6;
+  margin-right: 30px;
+}
+
+.ratings-pro {
+  color: #d6d6d6;
+}
+
+.price-course {
+  color: #ffa72b;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.related-courses-item {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .rating-item {
     font-size: 20px;
