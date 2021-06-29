@@ -776,7 +776,7 @@
                   <label
                     class="custom-control-label"
                     for="switch-listing"
-                  ></label>
+                  >Danh sách</label>
                 </div>
               </div>
             </div>
@@ -1228,6 +1228,7 @@
       const listServiceWrapper2 = document.querySelector(
         '.list-service-wrapper-2'
       );
+      const titleSwitch = document.querySelector('.custom-control-label');
       if (switchListing.checked === true) {
         listServiceWrapper1.style.display = 'block';
         listServiceWrapper2.style.display = 'none';
@@ -1238,10 +1239,12 @@
       }
       switchListing.onchange = function (e) {
         if (e.target.checked === true) {
+          titleSwitch.innerHTML = 'Danh sách';
           listServiceWrapper1.style.display = 'block';
           listServiceWrapper2.style.display = 'none';
         }
         if (e.target.checked !== true) {
+          titleSwitch.innerHTML = 'Bảng';
           listServiceWrapper1.style.display = 'none';
           listServiceWrapper2.style.display = 'block';
         }
