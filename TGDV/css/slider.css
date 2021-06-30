@@ -4,8 +4,8 @@
 }
 
 .carousel {
-  width: 95%;
-  margin: 0px auto;
+  /* width: 95%;
+  margin: 0px auto; */
 }
 .carousel_item {
   display: flex;
@@ -16,11 +16,11 @@
 .carousel_item--text {
   font-size: 13px;
 }
-.slick-slide {
+.carousel .slick-slide {
   /* margin:10px; */
   /* padding:5px; */
 }
-.slick-slide img {
+.carousel .slick-slide img {
   margin: 0 auto;
   width: 50px;
   border: 2px solid #fff;
@@ -43,4 +43,36 @@
   background: grey;
   padding: 1px;
   padding-left: 0px;
+}
+/* reviews  */
+.section-intro {
+  padding: 20px;
+}
+.reviews {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.reviews-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(250, 87, 87);
+}
+.reviews-item {
+  padding: 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  /* max-width: 250px; */
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.reviews-item img {
+  width: 70px;
+}
+.reviews-wrapper .slick-list {
+  max-width: 250px;
+}
+.reviews-item.slick-slide {
+  max-width: 250px;
 }
