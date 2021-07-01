@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -12,7 +13,6 @@ img {
   max-width: 100%;
   width: 100%;
 }
-
 
 .banner-detail {
   padding: 20px 0;
@@ -344,7 +344,15 @@ ul.tab-services li a {
   color: #ffa72b;
   font-size: 20px;
 }
-
+/* disable */
+.detail-section .course-evaluate {
+  display: none;
+}
+@media screen and (min-width: 575.98px) {
+  .course-evaluate {
+    display: block;
+  }
+}
 @media screen and (min-width: 768px) {
   .rating-item {
     font-size: 20px;
