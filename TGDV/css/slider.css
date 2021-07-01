@@ -76,3 +76,56 @@
 .reviews-item.slick-slide {
   max-width: 250px;
 }
+.carousel-mobile-wrapper {
+  display: none;
+}
+@media only screen and (max-width: 769px) {
+  .carousel {
+    display: none;
+  }
+  .carousel-mobile-wrapper {
+    display: flex;
+    overflow-x: scroll;
+  }
+  .carousel-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .carousel_item {
+    width: 100px;
+    align-items: stretch;
+  }
+  .carousel_item--img {
+    width: 100%;
+  }
+  .carousel_item--img img {
+    margin: 0 auto;
+    width: 50px;
+    border: 2px solid #fff;
+    height: auto;
+  }
+  /* width */
+  .carousel-mobile::-webkit-scrollbar {
+    width: 0px;
+  }
+  .carousel-mobile-wrapper::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* Track */
+  .carousel-mobile-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  .carousel-mobile-wrapper::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  /* Handle on hover */
+  .carousel-mobile-wrapper::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+  }
+}
