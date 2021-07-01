@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   width: 100%;
@@ -309,6 +313,36 @@ ul.tab-services li a {
   color: #333;
   font-size: 20px;
   font-weight: bold;
+}
+
+.ratings-description-mobile {
+  position: fixed;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  z-index: 1;
+  border-top: 1px solid #d6d6d6;
+  font-weight: bold;
+}
+
+.ratings-description-mobile-wrapper {
+  position: relative;
+}
+
+.ratings-description-mobile-wrapper i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.ratings-description-mobile span {
+  color: #ffa72b;
+  font-size: 20px;
 }
 
 @media screen and (min-width: 768px) {
