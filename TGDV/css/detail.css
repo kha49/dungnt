@@ -44,8 +44,8 @@ img {
 .rating-item.evaluate {
   background-color: #ffa72b;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,6 +387,11 @@ ul.tab-services li a {
     z-index: 10000;
     background-color: #fff;
     width: 240px;
+  }
+
+  .rating-item.evaluate {
+    width: 80px;
+    height: 80px;
   }
 }
 
