@@ -38,13 +38,14 @@ img {
 
 .rating {
   display: flex;
+  align-items: center;
 }
 
 .rating-item.evaluate {
   background-color: #ffa72b;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,10 +53,13 @@ img {
 }
 
 .rating-item {
-  margin: 10px 20px;
+  margin: 4px 6px;
+  padding: 10px 20px;
   text-align: center;
   font-size: 12px;
   color: #622c60;
+  border: 1px solid #622c60;
+  border-radius: 50px;
 }
 
 .video-course {
@@ -89,7 +93,7 @@ img {
 }
 
 .count {
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .ratings:nth-of-type(1) .type-rating {
@@ -383,6 +387,11 @@ ul.tab-services li a {
     z-index: 10000;
     background-color: #fff;
     width: 240px;
+  }
+
+  .rating-item.evaluate {
+    width: 80px;
+    height: 80px;
   }
 }
 
