@@ -86,12 +86,15 @@
   .carousel-mobile-wrapper {
     display: flex;
     overflow-x: scroll;
+    height: 228px;
+    display: flex;
   }
   .carousel-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
   .carousel_item {
     width: 100px;
@@ -132,7 +135,8 @@
     position: relative;
     height: .25rem;
     border-radius: .0625rem;
-    background:#efefef;
+    /* background:#efefef; */
+    background:blue;
     width:50px;
     margin:0 auto;
   }
