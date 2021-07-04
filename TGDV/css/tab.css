@@ -112,6 +112,11 @@ p {
   flex-wrap: wrap;
 }
 
+.product-item a {
+  color: #333;
+  text-decoration: none;
+}
+
 .product-time-item {
   width: 25%;
   text-align: center;
