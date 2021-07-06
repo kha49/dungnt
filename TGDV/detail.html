@@ -81,28 +81,36 @@
                   <div class="criteria-item">
                     <div class="label">Tiêu chí</div>
                     <div class="divide">
-                      <div class="divide-bar"></div>
+                      <div class="divide-bar" data-value="2">
+                        <span></span>
+                      </div>
                     </div>
-                    <div class="point">9</div>
+                    <div class="point">2</div>
                   </div>
                   <div class="criteria-item">
-                    <div class="label">Tiêu chí</div>
+                    <div class="label">Giá cả</div>
                     <div class="divide">
-                      <div class="divide-bar"></div>
+                      <div class="divide-bar" data-value="7">
+                        <span></span>
+                      </div>
                     </div>
-                    <div class="point">9</div>
+                    <div class="point">7</div>
                   </div>
                   <div class="criteria-item">
-                    <div class="label">Tiêu chí</div>
+                    <div class="label">Vị trí</div>
                     <div class="divide">
-                      <div class="divide-bar"></div>
+                      <div class="divide-bar" data-value="5">
+                        <span></span>
+                      </div>
                     </div>
-                    <div class="point">9</div>
+                    <div class="point">5</div>
                   </div>
                   <div class="criteria-item">
-                    <div class="label">Tiêu chí</div>
+                    <div class="label">Chất lượng</div>
                     <div class="divide">
-                      <div class="divide-bar"></div>
+                      <div class="divide-bar" data-value="9">
+                        <span></span>
+                      </div>
                     </div>
                     <div class="point">9</div>
                   </div>
@@ -500,28 +508,36 @@
               <div class="criteria-item">
                 <div class="label">Tiêu chí</div>
                 <div class="divide">
-                  <div class="divide-bar"></div>
+                  <div class="divide-bar" data-value="1">
+                    <span></span>
+                  </div>
                 </div>
                 <div class="point">9</div>
               </div>
               <div class="criteria-item">
                 <div class="label">Tiêu chí</div>
                 <div class="divide">
-                  <div class="divide-bar"></div>
+                  <div class="divide-bar" data-value="1">
+                    <span></span>
+                  </div>
                 </div>
                 <div class="point">9</div>
               </div>
               <div class="criteria-item">
                 <div class="label">Tiêu chí</div>
                 <div class="divide">
-                  <div class="divide-bar"></div>
+                  <div class="divide-bar" data-value="1">
+                    <span></span>
+                  </div>
                 </div>
                 <div class="point">9</div>
               </div>
               <div class="criteria-item">
                 <div class="label">Tiêu chí</div>
                 <div class="divide">
-                  <div class="divide-bar"></div>
+                  <div class="divide-bar">
+                    <span></span>
+                  </div>
                 </div>
                 <div class="point">9</div>
               </div>
@@ -569,7 +585,19 @@
             });
           });
         }
+        
+        caculateCriteria();
       });
+
+      const caculateCriteria = () => {
+          const divideBars = document.querySelectorAll('.divide-bar');
+          if(divideBars){
+            divideBars.forEach((divideBar, index) => {
+              var value = divideBar.dataset.value;
+              divideBar.querySelector('span').style.width = `${Math.floor((Number.parseInt(value)/10)*100)}%`;
+            });
+          }
+      }
     </script>
   </body>
 </html>
