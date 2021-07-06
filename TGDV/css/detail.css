@@ -113,7 +113,7 @@ img {
 }
 
 .criteria {
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 
 .criteria-item {
@@ -123,11 +123,7 @@ img {
 }
 
 .criteria-item .label {
-  flex: 0 1 50%;
-}
-
-.criteria-item .point {
-  margin-right: -20px;
+  flex: 0 1 25%;
 }
 
 .divide {
@@ -415,6 +411,18 @@ ul.tab-services li a {
 
 @media screen and (min-width: 1025px) {
   .criteria {
-    margin: 20px;
+    margin: 20px 10px 20px 0;
+  }
+
+  .criteria-item .label {
+    flex: 0 1 45%;
+  }
+
+  .divide {
+    flex: 0 1 45%;
+  }
+
+  .criteria-item .point {
+    margin-right: -10px;
   }
 }
