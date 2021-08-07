@@ -17865,6 +17865,7 @@ html .bg--parallax {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: center;
 }
 .footer__bottom--right {
   display: flex;
