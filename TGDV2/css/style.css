@@ -1294,6 +1294,12 @@ body {
   padding: 0 15px;
 }
 
+.ps-container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 @media (max-width: 1680px) {
   .ps-container {
     padding: 0 30px;
@@ -15856,6 +15862,11 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
   flex-flow: row nowrap;
 }
 
+.navigation > .ps-container-fluid {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 .navigation > .ps-container > *,
 .navigation > .container > * {
   width: 100%;
@@ -15985,7 +15996,12 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
   flex-flow: row nowrap;
 }
 
-.header .header__top .ps-container > *,
+.header .header__top .ps-container-fluid {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.header .header__top .ps-container-fluid > *,
 .header .header__top .container > * {
   width: 100%;
 }
@@ -17882,22 +17898,19 @@ html .bg--parallax {
   cursor: pointer; /* Add a pointer on hover */
   display: none;
 }
+#overlay-menu.show {
+  display: block;
+}
+
 .menu-mobile {
   /* display: none; */
-  width: 250px;
+  width: 280px;
   background: #fff;
   position: fixed;
   top: 0;
   z-index: 5001;
-  /* right: 0; */
   bottom: 0;
-  left: -100%;
-  display: none;
-
-  /* thằng cha Ul đây, nó -100 rôi nên thg con -100 thành -200 */
-  /* vậy nên khi cho nó chạy vào thì thg fixed chạy vô trc rồi mới đến thg uL nền trắng
-   */
-
+  left: -280px;
   transition: all 0.3s ease-in-out;
 }
 .menu-mobile {
@@ -17927,26 +17940,42 @@ html .bg--parallax {
 }
 .close-menu {
   color: #fff;
-  position: absolute;
-  right: -3rem;
+  position: fixed;
+  left: 300px;
+  top: 10px;
   font-size: 24px;
   font-weight: 600;
+  z-index: 5001;
+  display: none;
+}
+.close-menu.show {
+  display: block;
 }
 .menu-mobile__header {
   background-color: #232f3e;
   padding: 8px 20px;
 }
-.menu-mobile__content {
-}
 .menu-mobile__item {
   border-top: 1px solid #f2f2f2;
 }
 .menu-mobile__title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 
   padding: 8px 20px 8px 20px;
+  position: relative;
 }
+.menu-mobile__title .icon-chevron-down {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.menu-mobile__title .icon-chevron-down.active {
+  transform: translateY(-50%) rotate(180deg);
+}
+
 .menu-mobile__des {
   padding: 0 20px 5px 20px;
   display: none;
@@ -17959,9 +17988,9 @@ html .bg--parallax {
 .menu-mobile__item--help {
   display: block;
 }
-.show {
-  display: block !important;
-  left: 0 !important;
+.menu-mobile.show {
+  left: 0;
+  transition: left 0.3s ease-in-out;
 }
 
 .none-1 {
