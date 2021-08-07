@@ -15700,11 +15700,11 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
   position: relative;
 }
 
-.menu--product-categories:hover .menu__content {
+/* .menu--product-categories:hover .menu__content {
   visibility: visible;
   opacity: 1;
   transform: scale3d(1, 1, 1) translateY(0);
-}
+} */
 
 .menu--dropdown > li {
   padding: 0 20px;
@@ -17813,7 +17813,7 @@ html .bg--parallax {
   background-color: #fff;
   padding: 30px;
   position: relative;
-  z-index: 9999;
+  z-index: 4;
   margin-bottom: 30px;
   border-radius: 3px;
 }
@@ -17864,7 +17864,87 @@ html .bg--parallax {
 .footer__bottom--right .ps-dropdown > a {
   font-weight: 600;
 }
-.page-bottom{
+.page-bottom {
   position: relative;
-  margin
+}
+/* menu-mobile */
+
+#overlay-menu {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 5000; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+  display: none;
+}
+.menu-mobile {
+  /* display: none; */
+  width: 250px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 5001;
+  /* right: 0; */
+  bottom: 0;
+  left: -100%;
+  display: none;
+
+  /* thằng cha Ul đây, nó -100 rôi nên thg con -100 thành -200 */
+  /* vậy nên khi cho nó chạy vào thì thg fixed chạy vô trc rồi mới đến thg uL nền trắng
+   */
+
+  transition: all 0.3s ease-in-out;
+}
+.menu-mobile {
+  color: #000;
+}
+.close-menu {
+  color: #fff;
+  position: absolute;
+  right: -3rem;
+  font-size: 24px;
+  font-weight: 600;
+}
+.menu-mobile__header {
+  background-color: #232f3e;
+  padding: 8px 20px;
+}
+.menu-mobile__content {
+}
+.menu-mobile__item {
+  border-top: 1px solid #f2f2f2;
+}
+.menu-mobile__title {
+  font-size: 18px;
+  font-weight: 600;
+
+  padding: 8px 20px 8px 20px;
+}
+.menu-mobile__des {
+  padding: 0 20px 5px 20px;
+  display: none;
+}
+.menu-mobile__item--sub {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.menu-mobile__item--help {
+  display: block;
+}
+.show {
+  display: block !important;
+  left: 0 !important;
+}
+
+.none-1 {
+  display: none !important;
+}
+.block {
+  display: block !important;
 }
