@@ -17902,6 +17902,28 @@ html .bg--parallax {
 }
 .menu-mobile {
   color: #000;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+/* width */
+.menu-mobile::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+.menu-mobile::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.menu-mobile::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.menu-mobile::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 .close-menu {
   color: #fff;
