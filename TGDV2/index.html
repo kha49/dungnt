@@ -1506,10 +1506,15 @@ behavior: 'smooth'
             $('.menu-mobile').removeClass('show');
             $('#overlay-menu').removeClass('show');
             $('.close-menu').removeClass('show');
+            $('.menu-mobile__content--main').removeClass('menu-translateX-left');
+            $('.menu-mobile__content [data-menu-id]').removeClass('menu-mobile__content--visible')
         });
         $('#overlay-menu').click(function () {
             $('.menu-mobile').removeClass('show');
             $('#overlay-menu').removeClass('show');
+            $('.close-menu').removeClass('show');
+            $('.menu-mobile__content--main').removeClass('menu-translateX-left');
+            $('.menu-mobile__content [data-menu-id]').removeClass('menu-mobile__content--visible')
         })
         //collapse
         // $( ".menu-mobile__title" ).click(function() {
