@@ -157,7 +157,10 @@
             </div>
           </div>
         </div>
-        <div class="carousel-mobile-wrapper" onscroll="detectScrollHorizontal()">
+        <div
+          class="carousel-mobile-wrapper"
+          onscroll="detectScrollHorizontal()"
+        >
           <div class="carousel-mobile">
             <div class="carousel_item">
               <div class="carousel_item--img">
@@ -393,13 +396,11 @@
               </div>
               <div class="carousel_item--text">Chăm sóc sức khoẻ</div>
             </div> -->
-          
           </div>
         </div>
-        <div class="scrollbar-horizontal-wrapper " >
+        <div class="scrollbar-horizontal-wrapper">
           <div class="scrollbar-horizontal"></div>
         </div>
-     
       </div>
       <section class="reviews">
         <div class="row">
@@ -486,7 +487,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript">
-
       $(document).ready(function () {
         console.log(screen.width);
         if (screen.width > 768) {
@@ -494,7 +494,7 @@
             rows: 1,
             slidesToShow: 12,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             // autoplay: true,
             // autoplaySpeed: 2000,
             responsive: [
@@ -539,7 +539,7 @@
         $('.reviews-wrapper').slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
+          arrows: true,
           vertical: true,
           autoplay: true,
           autoplaySpeed: 2000,
@@ -554,25 +554,27 @@
             },
           ],
         });
-        
-      
       });
       function detectScrollHorizontal() {
-        var elmnt = document.querySelector(".carousel-mobile-wrapper");
+        var elmnt = document.querySelector('.carousel-mobile-wrapper');
         var scrollLeft = elmnt.scrollLeft;
-        console.log("scrollLeft:",scrollLeft)
-        var divWidth = $(".carousel-mobile-wrapper").height();
-        console.log('divWidth',divWidth);
-        var count = $('.carousel-mobile .carousel_item').length
-        if(count %2 ==0) {
-          var widthElementWrapper = count/2*100;
+        console.log('scrollLeft:', scrollLeft);
+        var divWidth = $('.carousel-mobile-wrapper').height();
+        console.log('divWidth', divWidth);
+        var count = $('.carousel-mobile .carousel_item').length;
+        if (count % 2 == 0) {
+          var widthElementWrapper = (count / 2) * 100;
+        } else {
+          var widthElementWrapper = ((count + 1) / 2) * 100;
         }
-        else{
-          var widthElementWrapper = ((count+1)/2)*100;
-        }
-        console.log('count:',count);
-          $('.scrollbar-horizontal').css("transform", `translateX(${((40*(scrollLeft)/((widthElementWrapper-screen.width+40))))}px)`);
-          // $('.scrollbar-horizontal').css("transform", `translateX(${40*(scrollLeft)/(divWidth-screen.width)}px)`);
+        console.log('count:', count);
+        $('.scrollbar-horizontal').css(
+          'transform',
+          `translateX(${
+            (40 * scrollLeft) / (widthElementWrapper - screen.width + 40)
+          }px)`
+        );
+        // $('.scrollbar-horizontal').css("transform", `translateX(${40*(scrollLeft)/(divWidth-screen.width)}px)`);
       }
     </script>
   </body>
