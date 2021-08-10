@@ -18134,16 +18134,20 @@ html .bg--parallax {
   font-weight: 700;
   margin-right: 4px;
 }
-.show-more {
+.show-more, .compact-btn {
   color: #7a7a7a;
   font-size: 17px;
   font-weight: 500;
   text-align: center;
+  cursor: pointer;
 }
-.show-more span {
+.compact-btn {
+  display: none;
+}
+.show-more span, .compact-btn span {
   font-weight: 500;
 }
-.show-more i {
+.show-more i, .compact-btn i {
   font-size: 9px;
   font-weight: 700;
   color: #999999;
@@ -18418,5 +18422,9 @@ button.slick-next.slick-arrow {
 /* the parent */
 .slick-list {
   margin: 0 -15px;
+}
+
+.show-more-content {
+  display: none;
 }
 /* END DETAIL PAGE */
