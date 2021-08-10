@@ -18083,6 +18083,10 @@ html .bg--parallax {
 .product-detail-wrap {
   padding: 10px 0 30px 0;
 }
+
+.product-detail-wrap .row {
+  margin-right: 0;
+}
 .product-detail-main {
 }
 
