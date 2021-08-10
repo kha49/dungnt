@@ -18379,11 +18379,8 @@ html .bg--parallax {
 button.slick-prev.slick-arrow {
   top: 75px;
 }
-.slick-prev:before {
-  content: '←';
-  color: #fff;
-  background: black;
-  border-radius: 50%;
+button.slick-next.slick-arrow {
+  top: 75px;
 }
 .slick-prev:before {
   content: '←';
@@ -18391,6 +18388,7 @@ button.slick-prev.slick-arrow {
   background: black;
   border-radius: 50%;
 }
+
 .slick-next:before {
   content: '→';
   color: #fff;
