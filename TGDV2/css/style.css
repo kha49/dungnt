@@ -18377,27 +18377,39 @@ html .bg--parallax {
   border-bottom: 1px solid #ced4da;
 }
 .services-related-slider {
-  padding: 0 25px;
+  padding: 0 50px;
 }
 /* .slick-prev:before  */
 button.slick-prev.slick-arrow {
   top: 75px;
+  left: -40px;
 }
 button.slick-next.slick-arrow {
   top: 75px;
+  right: -30px;
 }
 .slick-prev:before {
-  content: '←';
-  color: #fff;
-  background: black;
-  border-radius: 50%;
+  content: '\e93b';
+  font-family: 'Linearicons' !important;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid;
 }
 
 .slick-next:before {
-  content: '→';
-  color: #fff;
-  background: black;
-  border-radius: 50%;
+  content: '\e93c';
+  font-family: 'Linearicons' !important;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid;
 }
 /* the slides */
 .slick-slide {
