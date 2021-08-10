@@ -18153,7 +18153,9 @@ html .bg--parallax {
   color: #999999;
 }
 .product-detail-service {
-  margin-right: 10px;
+  margin-right: -10px;
+  border:2px solid #f4f4f4; 
+  padding: 10px 15px;
 }
 .product-detail-service__title {
   color: #b21101;
@@ -18426,5 +18428,19 @@ button.slick-next.slick-arrow {
 
 .show-more-content {
   display: none;
+}
+
+.share-social-network {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.share-social-network span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.share-social-network i {
+  margin-right: 5px;
 }
 /* END DETAIL PAGE */
