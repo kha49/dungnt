@@ -18209,6 +18209,12 @@ html .bg--parallax {
   font-weight: 600;
   margin: 0 15px;
 }
+.item-related__price {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
 .item-related__price div {
   font-size: 18px;
   font-weight: 600;
