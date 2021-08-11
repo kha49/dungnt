@@ -15933,6 +15933,14 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
   transition: all 0.4s ease;
 }
 
+.header .header__extra.header__extra--cart {
+  display: inline-block;
+  position: relative;
+  width: 55px;
+  height: 42px;
+  transition: all 0.4s ease;
+}
+
 .header .header__extra > i {
   font-size: 30px;
   line-height: 42px;
@@ -15953,6 +15961,19 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
   background-color: transparent;
   border-radius: 50%;
   color: #f58b03;
+}
+
+.header .header__extra.header__extra--cart span {
+  top: 5px;
+  right: 15px;
+}
+
+.header .header__extra.header__extra--cart img {
+  position: absolute;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
 }
 
 .header .header__extra span i {
