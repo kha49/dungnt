@@ -18027,7 +18027,12 @@ html .bg--parallax {
   padding: 8px 20px 8px 20px;
   position: relative;
 }
-
+.menu-mobile__title--help {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 20px 8px 20px;
+  position: relative;
+}
 .menu-mobile__title .icon-chevron-down {
   position: absolute;
   top: 50%;
