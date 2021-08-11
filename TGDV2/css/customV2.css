@@ -650,5 +650,22 @@ button.slick-next.slick-arrow {
 
 .share-social-network i {
   margin-right: 5px;
+  font-size: 18px;
+}
+
+.share-social-network .fa-facebook {
+  color: #3b5998;
+}
+
+.share-social-network .fa-twitter {
+  color: #0084b4;
+}
+
+.share-social-network .fa-google-plus {
+  color: #FF0000;
+}
+
+.share-social-network .fa-instagram {
+  color: #C32AA3;
 }
 /* END DETAIL PAGE */
