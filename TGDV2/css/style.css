@@ -15526,6 +15526,7 @@ html:not([dir='rtl']) .noUi-horizontal .noUi-handle {
 
 .menu {
   text-align: left;
+  display: flex;
 }
 
 .menu > li {
@@ -18139,7 +18140,8 @@ html .bg--parallax {
   font-weight: 700;
   margin-right: 4px;
 }
-.show-more, .compact-btn {
+.show-more,
+.compact-btn {
   color: #7a7a7a;
   font-size: 17px;
   font-weight: 500;
@@ -18149,17 +18151,19 @@ html .bg--parallax {
 .compact-btn {
   display: none;
 }
-.show-more span, .compact-btn span {
+.show-more span,
+.compact-btn span {
   font-weight: 500;
 }
-.show-more i, .compact-btn i {
+.show-more i,
+.compact-btn i {
   font-size: 9px;
   font-weight: 700;
   color: #999999;
 }
 .product-detail-service {
   margin-right: -10px;
-  border:2px solid #f4f4f4; 
+  border: 2px solid #f4f4f4;
   padding: 10px 15px;
 }
 .product-detail-service__title {
