@@ -18088,6 +18088,10 @@ html .bg--parallax {
 .product-detail-wrap {
   padding: 10px 0 30px 0;
 }
+
+.product-detail-wrap .row {
+  margin-right: 0;
+}
 .product-detail-main {
 }
 
@@ -18135,22 +18139,28 @@ html .bg--parallax {
   font-weight: 700;
   margin-right: 4px;
 }
-.show-more {
+.show-more, .compact-btn {
   color: #7a7a7a;
   font-size: 17px;
   font-weight: 500;
   text-align: center;
+  cursor: pointer;
 }
-.show-more span {
+.compact-btn {
+  display: none;
+}
+.show-more span, .compact-btn span {
   font-weight: 500;
 }
-.show-more i {
+.show-more i, .compact-btn i {
   font-size: 9px;
   font-weight: 700;
   color: #999999;
 }
 .product-detail-service {
-  margin-right: 10px;
+  margin-right: -10px;
+  border:2px solid #f4f4f4; 
+  padding: 10px 15px;
 }
 .product-detail-service__title {
   color: #b21101;
@@ -18378,27 +18388,39 @@ html .bg--parallax {
   border-bottom: 1px solid #ced4da;
 }
 .services-related-slider {
-  padding: 0 25px;
+  padding: 0 50px;
 }
 /* .slick-prev:before  */
 button.slick-prev.slick-arrow {
   top: 75px;
+  left: -40px;
 }
 button.slick-next.slick-arrow {
   top: 75px;
+  right: -30px;
 }
 .slick-prev:before {
-  content: '←';
-  color: #fff;
-  background: black;
-  border-radius: 50%;
+  content: '\e93b';
+  font-family: 'Linearicons' !important;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid;
 }
 
 .slick-next:before {
-  content: '→';
-  color: #fff;
-  background: black;
-  border-radius: 50%;
+  content: '\e93c';
+  font-family: 'Linearicons' !important;
+  color: #333;
+  background: #fff;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid;
 }
 /* the slides */
 .slick-slide {
@@ -18407,5 +18429,23 @@ button.slick-next.slick-arrow {
 /* the parent */
 .slick-list {
   margin: 0 -15px;
+}
+
+.show-more-content {
+  display: none;
+}
+
+.share-social-network {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.share-social-network span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.share-social-network i {
+  margin-right: 5px;
 }
 /* END DETAIL PAGE */
