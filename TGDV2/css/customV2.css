@@ -117,26 +117,24 @@
 .menu-mobile {
   color: #000;
   /* height: 100vh; */
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 /* width */
-.menu-mobile::-webkit-scrollbar {
-  width: 1px;
+.menu-mobile__content::-webkit-scrollbar {
+  width: 5px;
 }
 
 /* Track */
-.menu-mobile::-webkit-scrollbar-track {
+.menu-mobile__content::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
 /* Handle */
-.menu-mobile::-webkit-scrollbar-thumb {
+.menu-mobile__content::-webkit-scrollbar-thumb {
   background: #888;
 }
 
 /* Handle on hover */
-.menu-mobile::-webkit-scrollbar-thumb:hover {
+.menu-mobile__content::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 .close-menu {
@@ -159,6 +157,8 @@
 }
 .menu-mobile__content {
   position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   /* visibility: hidden; */
 }
